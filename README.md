@@ -14,7 +14,7 @@ There is a list of Expositions located in Expo Halls. Visitor chooses topic, buy
 
 3. *Installation*
 
-Download project from Github repository. Start MySQL server (both login and password are "root"). Execute createdb.sql to create database tables. In command line run mvn clean install. Copy expocalendar.war from target folder and paste it to the /TOMCAT/webapps folder.
+Download project from Github repository. Start MySQL server (both login and password are "root"). Execute createdb.sql to create database tables. In command line run ```mvn clean install```. Copy expocalendar.war from target folder and paste it to the /TOMCAT/webapps folder.
 
 4. *Launch*
 
