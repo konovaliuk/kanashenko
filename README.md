@@ -7,10 +7,10 @@ There is a list of Expositions located in Expo Halls. Visitor chooses topic, buy
 
 2. *Software requirements*
 
- jdk 1.8.0_171
- Apache Tomcat 9.0.8
- MySQL Server 8.0.11
- Apache Maven 3.5.4  
+ *jdk 1.8.0_171
+ *Apache Tomcat 9.0.8
+ *MySQL Server 8.0.11
+ *Apache Maven 3.5.4  
 
 3. *Installation*
 
