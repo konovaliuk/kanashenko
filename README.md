@@ -4,8 +4,6 @@ The web project was done for Java learning courses
 
 There is a list of Expositions located in Expo Halls. Visitor chooses topic, buys Tickets and makes a Payment.
 
-Вариант 7. Система Календарь выставок. Существует список Выставочных залов в каждом из которых есть перечень Экспозиций. Посетитель покупает Билеты оформив Платёж и выбрав Тему выставки.
-
 2. *Software requirements*
 
  * jdk 1.8.0_171
