@@ -24,8 +24,7 @@ public class DaoServiceTest {
 	@Mock
     private IDAOExpoHall expoHallDaoMock;	
 	@Mock
-    private IDAOTicket ticketDaoMock;
-	
+    private IDAOTicket ticketDaoMock;	
 	@InjectMocks
     private DaoService daoService = new DaoService();
 
@@ -33,13 +32,12 @@ public class DaoServiceTest {
 	public void testIsVisitor_ValidUser() {
 		
 		//Given
-        given(visitorDaoMock.isVisitor("admin", "qwerty")).willReturn(true);
+		given(visitorDaoMock.isVisitor("admin", "qwerty")).willReturn(true);
 		//When
-        boolean validUser = daoService.isVisitor("admin", "qwerty");
-        //Then
-        assertThat(validUser, is(true));
-        
-        verify(visitorDaoMock, times(1)).isVisitor("admin", "qwerty");
+		boolean validUser = daoService.isVisitor("admin", "qwerty");
+		//Then
+		assertThat(validUser, is(true));
+		verify(visitorDaoMock, times(1)).isVisitor("admin", "qwerty");
 	}
 	
 	@Test
@@ -48,10 +46,7 @@ public class DaoServiceTest {
 		//When
         boolean validUser = daoService.isVisitor("asd", "23f2qf2fec");
         //Then
-        assertThat(validUser, is(false));
-        
+        assertThat(validUser, is(false));      
         verify(visitorDaoMock, times(1)).isVisitor("asd", "23f2qf2fec");
-	}
-	
-
+	}	
 }
