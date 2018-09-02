@@ -30,7 +30,6 @@ public class RegisterButton implements IButton {
 	private static final String NAME = "name";
 	private static final String REGISTER_SUCCESS = "REGISTER_SUCCESS";
 	private static final String REGISTER_ERROR = "REGISTER_ERROR";
-	private static final String USER_EXISTS = "USER_EXISTS";
 	
 	public RegisterButton() {
 	}
@@ -60,7 +59,7 @@ public class RegisterButton implements IButton {
             page = Config.getInstance().getProperty(Config.REGISTER);
 		}
 		else if (daoService.isVisitor(login, password)) {
-			request.setAttribute("message", login + bundle.getString(USER_EXISTS));
+			request.setAttribute("message", "User with name " + "'" + login + "'" + " already exists");
             page = Config.getInstance().getProperty(Config.LOGIN);
            
         } else {
