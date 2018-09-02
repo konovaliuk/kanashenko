@@ -20,4 +20,5 @@ Download project from Github repository. Start MySQL server (both login and pass
 4. *Launch*
 
 Run Tomcat server using script /TOMCAT/bin/startup.bat .The deployed project will be available on http://localhost:8080/expocalendar/.
+To register as administrator use adminKey "11" (change it in config file).
 
