@@ -16,12 +16,19 @@ import javax.servlet.http.HttpServletResponse;
 import manager.Config;
 
 public class LogoutButton implements IButton {
-
+	
+	private static final Logger LOGGER = LogManager.getLogger(LogoutButton.class);
+	private static final String LOGIN = "username";
+	
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getSession().invalidate();
-		String page = Config.getInstance().getProperty(Config.LOGIN);
+		String page;
+		HttpSession session = request.getSession(true);
+		String login = (String) session.getAttribute(LOGIN);
+		session.invalidate();
+		page = Config.getInstance().getProperty(Config.LOGIN);
+		LOGGER.info("User "+login+" logged out");
 		return page;
 	}
 
