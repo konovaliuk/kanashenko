@@ -35,7 +35,11 @@
     <exception-type>java.lang.RuntimeException</exception-type>
     <location>/error.jsp</location>
   </error-page>
-		
+	
+  <listener>
+        <listener-class>listener.Listener</listener-class>
+    </listener>
+	
 	<servlet>
 	  <servlet-name>Controller</servlet-name>
 	  <servlet-class>servlet.Controller</servlet-class>
